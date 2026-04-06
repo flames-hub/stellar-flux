@@ -1,30 +1,35 @@
 {
   "expo": {
-    "name": "stellar-flux",
+    "name": "Stellar Flux",
     "slug": "stellar-flux",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "newArchEnabled": true,
+    "userInterfaceStyle": "dark",
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#0b0a09"
     },
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.tamanoapp.stellarflux",
+      "buildNumber": "1",
+      "supportsTablet": true,
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
+      "package": "com.tamanoapp.stellarflux",
+      "versionCode": 1,
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+        "backgroundColor": "#0b0a09"
+      }
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
+    "scheme": "stellar-flux",
+    "plugins": [
+      "expo-router",
+      "@shopify/react-native-skia"
+    ]
   }
 }
